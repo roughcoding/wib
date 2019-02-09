@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sanic_dm:
+    build: .
+    volumes:
+    - ".:/app"
+    container_name: sanic_dm
+    ports:
+    - "8100:8100"
+
